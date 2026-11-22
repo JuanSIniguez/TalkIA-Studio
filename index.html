@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>talkia · Automatizaciones para tu negocio</title>
+<meta name="description" content="Automatizamos la atención por WhatsApp, los turnos y las tareas repetitivas de tu negocio. Probalo un mes.">
+<style>
+  /* Paleta tomada del logo: cambiar acá y se actualiza toda la página */
+  :root{
+    --ink:#2a0a52;        /* violeta muy oscuro (texto "talkia") */
+    --brand:#6b21c8;      /* violeta principal */
+    --brand-2:#8b2be0;    /* violeta claro del degradé */
+    --tint:#f4ecfc;       /* lavanda de fondo */
+    --line:#e3d3f5;
+    --gold:#e8c547;       /* punto dorado del pico */
+    --text:#2b2140;
+    --muted:#6a5f80;
+    --bg:#ffffff;
+  }
+  *{box-sizing:border-box;margin:0}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+  header{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.3rem;color:var(--ink);text-decoration:none}
+  .brand img{width:44px;height:44px;border-radius:50%}
+  .btn{display:inline-block;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#fff;padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:0}
+  .btn:hover{filter:brightness(1.08)}
+  .btn.ghost{background:none;color:var(--brand);border:2px solid var(--brand)}
+  .hero{background:var(--tint);border-bottom:1px solid var(--line)}
+  .hero .wrap{padding:64px 20px 72px;max-width:760px}
+  .tag{display:inline-block;font-size:.85rem;font-weight:600;color:var(--brand);background:#fff;border:1px solid var(--line);padding:4px 12px;border-radius:999px;margin-bottom:18px}
+  h1{font-size:clamp(2rem,6vw,3.1rem);line-height:1.15;color:var(--ink);margin-bottom:16px}
+  h1 span{color:var(--brand)}
+  .hero p{font-size:1.15rem;color:var(--muted);margin-bottom:28px}
+  .hero .btns{display:flex;flex-wrap:wrap;gap:12px}
+  section{padding:56px 0}
+  h2{font-size:1.7rem;color:var(--ink);margin-bottom:10px}
+  .lead{color:var(--muted);margin-bottom:28px;max-width:640px}
+  .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+  .card{border:1px solid var(--line);border-radius:16px;padding:22px;background:#fff}
+  .card h3{color:var(--ink);font-size:1.1rem;margin-bottom:6px}
+  .card p{color:var(--muted);font-size:.97rem}
+  .dot{width:10px;height:10px;border-radius:50%;background:var(--gold);display:inline-block;margin-right:8px}
+  .alt{background:var(--tint);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  ol.steps{list-style:none;padding:0;counter-reset:s;display:grid;gap:14px;max-width:640px}
+  ol.steps li{counter-increment:s;padding-left:52px;position:relative}
+  ol.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:36px;height:36px;border-radius:50%;background:var(--brand);color:#fff;font-weight:700;display:grid;place-items:center}
+  ol.steps b{color:var(--ink)}
+  .cta{text-align:center}
+  .cta .box{background:linear-gradient(135deg,var(--ink),var(--brand));color:#fff;border-radius:24px;padding:44px 24px}
+  .cta h2{color:#fff}
+  .cta p{color:#e9dcfa;margin:8px auto 22px;max-width:520px}
+  .cta .btn{background:var(--gold);color:var(--ink)}
+  footer{padding:28px 0;color:var(--muted);font-size:.9rem;text-align:center}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <a class="brand" href="#"><img src="logo.jpg" alt="Logo de talkia">talkia</a>
+    <a class="btn ghost" href="#contacto">Hablemos</a>
+  </header>
+</div>
+
+<div class="hero">
+  <div class="wrap">
+    <span class="tag">Automatizaciones para negocios</span>
+    <h1>Que tu negocio <span>responda solo</span>, aunque vos estés ocupado.</h1>
+    <p>Armamos asistentes de WhatsApp, turnos con recordatorios y flujos que se ocupan de las tareas repetitivas. Vos te dedicás a atender y vender.</p>
+    <div class="btns">
+      <a class="btn" href="#contacto">Probalo un mes</a>
+      <a class="btn ghost" href="#que-hacemos">Qué hacemos</a>
+    </div>
+  </div>
+</div>
+
+<section id="que-hacemos">
+  <div class="wrap">
+    <h2>Qué podemos automatizar</h2>
+    <p class="lead">Ejemplos de lo que ya sabemos construir. Todo se adapta a cómo trabaja tu negocio.</p>
+    <div class="grid">
+      <div class="card"><h3><span class="dot"></span>Asistente de WhatsApp</h3><p>Responde consultas frecuentes, pasa horarios, catálogo y precios, y te avisa cuando hace falta una persona.</p></div>
+      <div class="card"><h3><span class="dot"></span>Turnos y recordatorios</h3><p>Los clientes reservan solos y reciben un aviso antes del turno. Menos ausencias y menos mensajes manuales.</p></div>
+      <div class="card"><h3><span class="dot"></span>Seguimiento de clientes</h3><p>Cada consulta queda registrada y ordenada, y nada se pierde entre chats.</p></div>
+      <div class="card"><h3><span class="dot"></span>Tareas repetitivas</h3><p>Planillas, avisos, informes: lo que hoy hacés a mano pasa a hacerse solo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Cómo trabajamos</h2>
+    <p class="lead">Un proceso simple y sin sorpresas.</p>
+    <ol class="steps">
+      <li><b>Charla inicial.</b> Entendemos qué te quita más tiempo hoy.</li>
+      <li><b>Propuesta clara.</b> Te mostramos qué vamos a automatizar y cómo sabremos que funciona.</li>
+      <li><b>Demo y prueba.</b> Lo ves funcionando con casos reales de tu negocio.</li>
+      <li><b>Acompañamiento.</b> Ajustamos y te damos soporte mientras lo usás.</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Tus datos son tuyos</h2>
+    <p class="lead">Las cuentas importantes quedan a tu nombre. Guardamos solo lo necesario y, si decidís irte, podés descargar y borrar tu información.</p>
+  </div>
+</section>
+
+<section id="contacto" class="cta">
+  <div class="wrap">
+    <div class="box">
+      <h2>Probalo un mes</h2>
+      <p>Contanos qué te gustaría automatizar y te mostramos cómo se vería en tu negocio.</p>
+      <!-- Reemplazar el número por el de talkia (formato 549 + código de área + número) -->
+      <a class="btn" href="https://wa.me/549XXXXXXXXXX?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20talkia">Escribinos por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 talkia · Automatizaciones para negocios</footer>
+
+</body>
+</html>
